@@ -1,0 +1,15 @@
+{
+    "name": "tiagoliveirati/php-e-clean-architecture",
+    "autoload": {
+        "psr-4": {
+            "Domain\\": "src/Domain"
+        }
+    },
+    "authors": [
+        {
+            "name": "tiagoliveirati",
+            "email": "dev.tiago.oliveira@gmail.com"
+        }
+    ],
+    "require": {}
+}
