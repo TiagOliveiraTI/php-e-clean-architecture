@@ -32,3 +32,4 @@ grumphp:
             config_file: '.phpspec.yml'
         phpcs:
             standard: PSR12
+            ignore_patterns: [./spec/*]
