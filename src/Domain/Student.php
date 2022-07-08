@@ -7,7 +7,7 @@ namespace Tiagoliveirati\CleanArch\Domain;
 class Student
 {
     public function __construct(
-        private string $cpf,
+        private Cpf $cpf,
         private string $name,
         private Email $email
     ) {
@@ -25,6 +25,6 @@ class Student
 
     public function cpf()
     {
-        return $this->cpf;
+        return $this->cpf->getCpf();
     }
 }
