@@ -8,7 +8,7 @@ class Student
 {
     public function __construct(
         private string $name,
-        private string $email
+        private Email $email
     ) {
     }
 
@@ -19,6 +19,6 @@ class Student
 
     public function getEmail(): string
     {
-        return $this->email;
+        return $this->email->getEmail();
     }
 }
