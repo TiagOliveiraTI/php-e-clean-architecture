@@ -3,6 +3,7 @@
 namespace spec\Tiagoliveirati\CleanArch\Domain;
 
 use PhpSpec\ObjectBehavior;
+use Tiagoliveirati\CleanArch\Domain\Cpf;
 use Tiagoliveirati\CleanArch\Domain\Student;
 use Tiagoliveirati\CleanArch\Domain\Email;
 
@@ -10,7 +11,7 @@ class StudentSpec extends ObjectBehavior
 {
     public function let()
     {
-        $this->beConstructedWith('01234567890', 'any_name', new Email('valid_email@email.com'));  
+        $this->beConstructedWith(new Cpf('01234567890'), 'any_name', new Email('valid_email@email.com'));  
     }
 
     public function it_is_initializable()
