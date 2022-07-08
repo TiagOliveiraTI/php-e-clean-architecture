@@ -9,7 +9,7 @@ class StudentSpec extends ObjectBehavior
 {
     public function let()
     {
-        $this->beConstructedWith('any_name');
+        $this->beConstructedWith('any_name', 'any_email');  
     }
 
     public function it_is_initializable()
@@ -20,5 +20,10 @@ class StudentSpec extends ObjectBehavior
     public function it_should_have_a_name()
     {
         $this->getName()->shouldReturn('any_name');
+    }
+
+    public function it_should_have_a_email()
+    {
+        $this->getEmail()->shouldReturn('any_email');
     }
 }
