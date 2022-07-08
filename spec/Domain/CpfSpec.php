@@ -25,4 +25,14 @@ class CpfSpec extends ObjectBehavior
     {
         $this->isValid('145.382.206-21')->shouldReturn(false);
     }
+
+    public function it_should_returns_a_cpf()
+    {
+        $this->getCpf()->shouldReturn('14538220620');
+    }
+
+    public function it_should_throw_an_exception_when_invalid_cpf()
+    {
+        $this->shouldThrow('\InvalidArgumentException')->during('__construct', ['145.382.206-21']);
+    }
 }
