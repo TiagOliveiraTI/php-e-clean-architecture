@@ -30,3 +30,5 @@ grumphp:
 
         phpspec:
             config_file: '.phpspec.yml'
+        phpcs:
+            standard: PSR12
