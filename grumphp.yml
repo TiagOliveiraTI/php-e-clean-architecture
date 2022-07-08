@@ -28,13 +28,5 @@ grumphp:
             multiline: true
             additional_modifiers: ''
 
-        phpcs:
-            standard: PSR12
-            ignore_patterns: [./tests/*, ./vendor/]
-
-        phpmd:
-            whitelist_patterns: [ ]
-            exclude: [./vendor/ ]
-            report_format: text
-            ruleset: ['rulesets.xml']
-            triggered_by: [ 'php' ]
+        phpspec:
+            config_file: '.phpspec.yml'

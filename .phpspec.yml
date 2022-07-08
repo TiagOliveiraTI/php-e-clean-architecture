@@ -1,0 +1,6 @@
+suites:
+  default:
+    namespace: Tiagoliveirati\CleanArch
+    psr4_prefix: Tiagoliveirati\CleanArch
+
+formatter.name: pretty

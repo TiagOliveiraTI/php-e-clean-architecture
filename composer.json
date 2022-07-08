@@ -2,7 +2,7 @@
     "name": "tiagoliveirati/php-e-clean-architecture",
     "autoload": {
         "psr-4": {
-            "Domain\\": "src/Domain"
+            "Tiagoliveirati\\CleanArch\\": "src/"
         }
     },
     "authors": [
@@ -13,7 +13,8 @@
     ],
     "require-dev": {
         "phpro/grumphp": "^1.13",
-        "monolog/monolog": "^2.7"
+        "monolog/monolog": "^2.7",
+        "phpspec/phpspec": "^7.2"
     },
     "config": {
         "allow-plugins": {
