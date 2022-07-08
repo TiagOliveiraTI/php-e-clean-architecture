@@ -6,7 +6,16 @@ class Cpf
 {
     public function __construct(private string $cpf)
     {
-        $this->isValid($this->cpf);
+        if (!$this->isValid($this->cpf)) {
+            throw new \InvalidArgumentException('Invalid CPF');
+        }
+
+        $this->getCpf();
+    }
+
+    public function getCpf(): string
+    {
+        return $this->cpf;
     }
 
     public function isValid(string $cpf): bool
